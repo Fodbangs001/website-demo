@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromatic Coffee Limited - Premium Coffee Experience</title>
+    <meta name="description" content="Experience the finest coffee at Aromatic Coffee Limited. Premium beans, expert brewing, and exceptional service.">
+    <link rel="icon" type="image/png" href="src/LogoFresh.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="src/LogoFresh.png" alt="Aromatic Coffee Logo">
+                <h2>Aromatic Coffee</h2>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Aromatic Coffee Limited</h1>
+            <p class="hero-subtitle">Where every cup tells a story of excellence</p>
+            <p class="hero-description">Experience the perfect blend of premium beans, expert craftsmanship, and warm hospitality in every sip.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#about" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="src/Brown and White Cafe Coffee Shop Logo.svg" alt="Aromatic Coffee" class="hero-logo hero-logo-animation">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p>Crafting exceptional coffee experiences since our founding</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Premium Quality, Exceptional Service</h3>
+                    <p>At Aromatic Coffee Limited in Sierra Leone, we believe that great coffee is more than just a beverage—it's a moment of connection, a pause in your day, and a celebration of craftsmanship.</p>
+                    
+                    <p>Our journey began with a simple mission: to source the finest coffee beans from around the world and transform them into extraordinary experiences for our customers.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Sustainably Sourced</h4>
+                            <p>We partner directly with coffee farmers to ensure fair trade and sustainable practices.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <h4>Freshly Roasted</h4>
+                            <p>Our beans are roasted in small batches to guarantee maximum freshness and flavor.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Crafted with Love</h4>
+                            <p>Every cup is prepared by our skilled baristas with passion and attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-coffee fa-5x"></i>
+                        <p>Coffee Beans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Discover our carefully curated selection of premium coffees and treats</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="espresso">Espresso</button>
+                <button class="category-btn" data-category="specialty">Specialty</button>
+                <button class="category-btn" data-category="cold">Cold Brew</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Coffee Gallery</h2>
+                <p>A glimpse into our aromatic world</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-coffee fa-3x"></i>
+                        <p>Espresso Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-seedling fa-3x"></i>
+                        <p>Coffee Beans</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="roasting.html" class="image-placeholder">
+                        <i class="fas fa-fire fa-3x"></i>
+                        <p>Roasting Process</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-mug-hot fa-3x"></i>
+                        <p>Latte Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store fa-3x"></i>
+                        <p>Coffee Shop</p>
+                    </div>
+                </div>
+                <a class="gallery-item" href="team.html" aria-label="Meet our team">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users fa-3x"></i>
+                        <p>Our Team</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us Today</h2>
+                <p>We'd love to serve you the perfect cup</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>47 Devil Hole Waterloo Highway<br>Freetown, Sierra Leone</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Thursday: 8:00 AM - 5:30 PM<br>
+                               Friday: Closed<br>
+                               Saturday - Sunday: 8:00 AM - 5:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+232 77 592119<br>+232 34 148949<br>+375 94 401613</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@aromaticcoffee.com<br>info@aromaticcoffee.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><img src="src/LogoFresh.png" alt="Aromatic Coffee Logo">Aromatic Coffee Limited</h3>
+                    <p>Brewing excellence, one cup at a time. Experience the difference that passion and quality make in every sip.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61583867967615" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="index.html" aria-label="Website" class="social-site"><i class="fas fa-globe"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Coffee Catering</a></li>
+                        <li><a href="#">Bean Wholesale</a></li>
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Barista Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for coffee tips, new arrivals, and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aromatic Coffee Limited. All rights reserved. | Crafted with ❤️ and ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aromatic Coffee | Our Team</title>
+  <meta name="description" content="Meet the Aromatic Coffee leadership and team: CEO, Co‑Founder, and staff." />
+  <link rel="icon" type="image/png" href="src/LogoFresh.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .breadcrumb { margin-top: 90px; padding: 10px 0; font-size: 0.95rem; }
+    .breadcrumb a { color: var(--primary-color); text-decoration: none; }
+    .page-hero { padding: 120px 0 40px; background: linear-gradient(135deg, var(--light-brown), var(--cream)); text-align:center; }
+    .page-hero h1 { color: var(--primary-color); }
+    .team-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .team-card { background:#fff; border-radius: 16px; padding: 24px; text-align:center; box-shadow: 0 8px 22px rgba(0,0,0,0.08); transition: var(--transition); }
+    .team-card:hover { transform: var(--hover-transform); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .team-avatar { width: 110px; height: 110px; border-radius: 50%; display:flex; align-items:center; justify-content:center; margin: 0 auto 16px; background: linear-gradient(135deg, var(--light-brown), var(--accent-color)); color: var(--primary-color); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+    .team-role { color: var(--secondary-color); font-weight: 700; margin-bottom: 6px; }
+    .team-name { color: var(--dark-brown); font-family: var(--font-heading); font-size: 1.2rem; }
+    .team-bio { color: var(--gray); font-size: 0.95rem; margin-top: 8px; }
+    .team-social { display:flex; gap:10px; justify-content:center; margin-top:12px; }
+    .team-social a { width:34px; height:34px; border-radius:50%; background: var(--primary-color); color:#fff; display:flex; align-items:center; justify-content:center; transition: var(--transition); }
+    .team-social a:hover { background: var(--accent-color); transform: var(--hover-transform); }
+    .back-actions { text-align:center; margin: 30px 0 60px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-logo">
+        <img src="src/LogoFresh.png" alt="Aromatic Coffee Logo">
+        <h2>Aromatic Coffee</h2>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb container">
+    <a href="index.html">Home</a> / Our Team
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Meet Our Team</h1>
+      <p>Passionate people crafting your perfect cup—every single day.</p>
+    </div>
+  </section>
+
+  <section class="container container--padded">
+    <div class="section-header">
+      <h2>Leadership</h2>
+      <p>Guided by experience, driven by quality.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-user-tie fa-2x"></i></div>
+        <div class="team-role">Chief Executive Officer</div>
+        <div class="team-name">Ibrahim Sahr Sorie Bangura</div>
+        <p class="team-bio">Leads vision and growth with a deep love for ethically sourced coffee and community impact.</p>
+        <div class="team-social">
+          <a href="https://wa.me/23277592119" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-user-astronaut fa-2x"></i></div>
+        <div class="team-role">Lead Program Manager</div>
+        <div class="team-name">Gibril Tamba Bangura</div>
+        <p class="team-bio">Built Aromatic Coffee from the ground up—focused on roasting excellence and barista craft.</p>
+        <div class="team-social">
+          <a href="https://wa.me/23234148949" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container--pad-bottom">
+    <div class="section-header">
+      <h2>Our Staff</h2>
+      <p>The friendly faces behind your favorite brews.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-mug-hot fa-2x"></i></div>
+        <div class="team-role">Head Barista</div>
+        <div class="team-name">Staff Member 1</div>
+        <p class="team-bio">Latte art champion and espresso perfectionist.</p>
+        <div class="team-social">
+          <a href="https://wa.me/23277592119" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-seedling fa-2x"></i></div>
+        <div class="team-role">Roaster</div>
+        <div class="team-name">Staff Member 2</div>
+        <p class="team-bio">Small‑batch roasts for maximum aroma and taste.</p>
+        <div class="team-social">
+          <a href="https://wa.me/23234148949" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-smile-beam fa-2x"></i></div>
+        <div class="team-role">Customer Care</div>
+        <div class="team-name">Staff Member 3</div>
+        <p class="team-bio">Ensures every visit feels warm and welcoming.</p>
+        <div class="team-social">
+          <a href="https://wa.me/37594401613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-store fa-2x"></i></div>
+        <div class="team-role">Store Manager</div>
+        <div class="team-name">Staff Member 4</div>
+        <p class="team-bio">Keeps the shop humming from open to close.</p>
+        <div class="team-social">
+          <a href="https://wa.me/23277592119" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-actions">
+      <a class="btn btn-secondary" href="index.html#gallery">Back to Gallery</a>
+      <a class="btn btn-primary" href="index.html#contact">Visit Us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><img src="src/LogoFresh.png" alt="Aromatic Coffee Logo">Aromatic Coffee Limited</h3>
+          <p>Brewing excellence, one cup at a time. Experience the difference that passion and quality make in every sip.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe for coffee tips, new arrivals, and special offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aromatic Coffee Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

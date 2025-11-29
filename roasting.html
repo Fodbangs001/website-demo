@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aromatic Coffee | Roasting Process</title>
+  <link rel="icon" type="image/png" href="src/LogoFresh.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .roasting-hero { text-align:center; padding:100px 40px 40px; }
+    .roasting-hero h1 { font-size:3rem; margin-bottom:15px; }
+    .roasting-intro { max-width:900px; margin:0 auto 50px; font-size:1.05rem; line-height:1.7; }
+    .video-section { padding:0 10px; }
+    .video-grid { display:grid; gap:30px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); max-width:1200px; margin:0 auto 70px; }
+    .video-card { background:var(--card-bg); border-radius:20px; padding:18px 18px 28px; box-shadow:0 6px 18px rgba(0,0,0,0.08); position:relative; display:flex; flex-direction:column; transition:transform .25s ease, box-shadow .25s ease; }
+    .video-card:hover { transform:translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,0.12); }
+    .video-card h3 { margin:14px 0 8px; font-size:1.18rem; }
+    .video-wrapper { position:relative; width:100%; padding-top:56.25%; border-radius:14px; overflow:hidden; background:linear-gradient(135deg,#e0c3a0,#c08b53); }
+    .video-wrapper iframe,.video-wrapper video { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+    .placeholder-note { font-size:.78rem; color:#8a5a2e; margin-top:auto; opacity:.8; }
+    .back-link { display:inline-block; margin:0 auto 40px; padding:12px 26px; background:var(--accent-color); color:#fff; border-radius:30px; text-decoration:none; font-weight:600; box-shadow:0 4px 12px rgba(0,0,0,0.15); transition:.25s; }
+    .back-link:hover { background:#5a3412; transform:translateY(-3px); }
+    /* Medium screens */
+    @media (max-width: 900px) {
+      .roasting-hero { padding:90px 28px 36px; }
+      .video-grid { gap:26px; }
+      .video-card { padding:16px 16px 24px; }
+    }
+    /* Small screens */
+    @media (max-width: 600px) {
+      .roasting-hero { padding:80px 18px 32px; }
+      .roasting-hero h1 { font-size:2.2rem; }
+      .roasting-intro { font-size:.95rem; margin-bottom:40px; }
+      .video-grid { gap:20px; grid-template-columns:1fr; }
+      .video-card { padding:14px 14px 22px; }
+      .video-card h3 { font-size:1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-logo">
+        <img src="src/LogoFresh.png" alt="Aromatic Coffee Logo">
+        <h2>Aromatic Coffee</h2>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="roasting-hero">
+    <h1>Coffee Roasting Process</h1>
+    <p class="roasting-intro">Discover the transformative journey from raw green beans to richly aromatic roasted coffee. Each stage of roasting unlocks complex flavors, aromas, and textures. Below are video demonstrations of key milestones in the craft. Replace the placeholders with your own videos to showcase your unique approach to roasting.</p>
+    <a href="index.html#gallery" class="back-link">← Back to Gallery</a>
+  </header>
+
+  <section class="video-section">
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-wrapper">
+          <!-- Local MP4 video replacing placeholder YouTube iframe -->
+          <video controls preload="metadata" poster="src/LogoFresh.png">
+            <source src="src/AZqCU9js7hu3GfYf-9E5Wg-AZqCU9js2HNY9MOwWnSLRA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3>Green Bean Selection</h3>
+        <p>Evaluating moisture, density, and defect levels before roasting begins.</p>
+        <div class="placeholder-note">Local MP4 embedded. Replace poster or file name as needed.</div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/0ySbs8IhG2Q" title="First Crack" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Drying Phase & First Crack</h3>
+        <p>Water evaporates and beans turn yellow; audible first crack marks key chemical changes.</p>
+        <div class="placeholder-note">Placeholder – replace with proprietary footage.</div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Lp1L6VmOAXE" title="Development" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Development & Flavor Formation</h3>
+        <p>Careful heat modulation builds sweetness without tipping into bitterness.</p>
+        <div class="placeholder-note">Customize with your roast profile video.</div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Y0nHfsHcA8E" title="Cooling" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Rapid Cooling</h3>
+        <p>Stopping the roast at the exact target to preserve desired flavor balance.</p>
+        <div class="placeholder-note">Replace with a clip of your cooling tray or technique.</div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/fmn57wre1cY" title="Quality Control" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Quality Cupping</h3>
+        <p>Assessing aroma, acidity, body, and aftertaste before releasing a batch.</p>
+        <div class="placeholder-note">Swap with internal QC session video.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+          <h3><img src="src/coffee-sketch-logo.jpg" alt="Aromatic Coffee Logo">Aromatic Coffee Limited</h3>
+        <p>Brewing excellence, one cup at a time. Experience the difference that passion and quality make in every sip.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61583867967615" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" class="social-instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter" class="social-twitter"><i class="fab fa-twitter"></i></a>
+          <a href="index.html" aria-label="Website" class="social-site"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 Aromatic Coffee Limited. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Notes:
+    1. Replace iframe src attributes with your own uploaded videos (YouTube, Vimeo, etc.).
+    2. To use self-hosted MP4 files, swap the <iframe> block for:
+       <video controls poster="src/roast-thumb1.jpg">
+         <source src="src/your-video-file.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+       </video>
+    3. Keep file sizes optimized (< 25MB) for faster loading.
+  -->
+</body>
+</html>
